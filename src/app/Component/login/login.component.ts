@@ -46,7 +46,7 @@ export class LoginComponent implements OnInit {
     this.invalidPasswordLogin = false;
     this.userService.getUsers().subscribe((data) => {
       this.users = data;
-  
+      console.log(this.users);
       var JSON = this.users;
       var hasMatchUserName = false;
       var hasMatchPassword = false;
@@ -58,19 +58,18 @@ export class LoginComponent implements OnInit {
           hasMatchUserName = true;
           if (jsonData.password == this.loginForm.controls.password.value) {
             hasMatchPassword = true;
-            localStorage.setItem('username',this.loginForm.controls.username.value);
-
-            //1 user login
+            localStorage.setItem(
+              'username',
+              this.loginForm.controls.username.value
+            );
             if (jsonData.roleCode == '1') {
               localStorage.setItem('rolecode', '1');
               this.router.navigate(['user-home']);
             }
-            //2 agent login
             if (jsonData.roleCode == '2') {
               localStorage.setItem('rolecode', '2');
               this.router.navigate(['agent-home']);
             }
-            //3 admin login
             if (jsonData.roleCode == '3') {
               localStorage.setItem('rolecode', '3');
               this.router.navigate(['admin-home']);
@@ -85,6 +84,16 @@ export class LoginComponent implements OnInit {
       if (hasMatchPassword == false) {
         this.invalidPasswordLogin = true;
       }
+      console.log(hasMatchUserName + ' ' + hasMatchPassword);
     });
-  } 
+  }
+  logOutUser(): void {
+    if (localStorage.getItem('username') != null) {
+      localStorage.removeItem('username');
+      this.router.navigate(['/login']);
+    }
+  }
+  addUser() {
+    this.router.navigate(['/add-user']);
+  }
 }

@@ -1,12 +1,12 @@
 export class Accounts{
-    createdBy: string="";
+    createdby: string="";
     userName: string="";
-    name: string="";
-    street: string="";
-    city: string="";
-    state: string="";
-    zip: string="";
-    Bus_seg: string="";
+    insuredName: string="";
+    insuredStreet: string="";
+    insuredCity: string="";
+    insuredState: string="";
+    insuredZip: string="";
+    businessSegmentName: string="";
     accountNumber: string="";
     id: string="";
 }

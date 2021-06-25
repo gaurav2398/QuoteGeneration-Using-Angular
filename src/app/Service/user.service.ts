@@ -12,9 +12,11 @@ export class UserService {
   status: string;
   constructor(private http: HttpClient) {}
   baseUrl: string = 'http://localhost:3000/'; // Base Url
+  baseUrl1: string = 'http://localhost:9091/api/'; // Base Url
+
   
   getAccounts() {
-    return this.http.get<Accounts[]>(this.baseUrl+'accounts');
+    return this.http.get<Accounts[]>(this.baseUrl1+'accounts');
   } // Get All accounts
   
   getUserById(createdBy: string) {
@@ -22,23 +24,24 @@ export class UserService {
   } // Get User By  Id
 
   createAccount(user: Accounts) {
-    return this.http.post(this.baseUrl+'accounts', user);
+    return this.http.post(this.baseUrl1+'accounts', user);
   } // Create New Insured Account
 
   getQuestions() {
     return this.http.get<Questions[]>(this.baseUrl+'questions');
   }
   createPolicy(question: QuestionsNew) {
-    return this.http.post(this.baseUrl+'policy', question);
+    return this.http.post(this.baseUrl1+'policy', question);
   } // Create New Insured Account
+
   getPolicy() {
-    return this.http.get<Questions[]>(this.baseUrl+'policy');
+    return this.http.get<Questions[]>(this.baseUrl1+'policy');
   } // Create New Insured Account
   
   getUsers() {
-    return this.http.get<User[]>(this.baseUrl+'users');
+    return this.http.get<User[]>(this.baseUrl1+'userrole');
   } // Get Profile
   createProfile(user: User) {
-    return this.http.post(this.baseUrl+'users', user);
+    return this.http.post(this.baseUrl1+'userrole', user);
   } // Create New Profile
 }

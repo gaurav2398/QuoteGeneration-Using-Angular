@@ -81,8 +81,7 @@ export class QuestionComponent implements OnInit {
       this.premiumAmount += 400;
     } else if (this.questionForm.controls.option3.value == 'Economy') {
       this.premiumAmount += 600;
-    }
-    
+    }    
 
     console.log(this.premiumAmount);
     console.log(this.questionForm.value);

@@ -19,7 +19,6 @@ export class CreateagentadminaccountComponent implements OnInit {
   account : Accounts[];
   invalidUserName: boolean;
 
-
   constructor(
     private formBuilder: FormBuilder,
     private router: Router,
@@ -43,14 +42,14 @@ export class CreateagentadminaccountComponent implements OnInit {
     console.log(localStorage.getItem('rolecode') + '');
 
     this.createForm = this.formBuilder.group({
-      createdBy: this.createdBy,
+      createdby: this.createdBy,
       userName: ['', Validators.required],
-      name: ['', Validators.required],
-      street: ['', Validators.required],
-      city: ['', Validators.required],
-      state: ['', Validators.required],
-      zip: ['', Validators.required],
-      Bus_seg: ['', Validators.required],
+      insuredName: ['', Validators.required],
+      insuredStreet: ['', Validators.required],
+      insuredCity: ['', Validators.required],
+      insuredState: ['', Validators.required],
+      insuredZip: ['', Validators.required],
+      businessSegmentName: ['', Validators.required],
       accountNumber: ['', Validators.required],
     });
   }

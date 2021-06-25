@@ -23,7 +23,7 @@ export class ViewAllAccountComponent implements OnInit {
           for (var index = 0; index < this.accounts.length; ++index) {
             var jsonData = this.accounts[index];
 
-            if (jsonData.createdBy == localStorage.getItem('username')) {
+            if (jsonData.createdby == localStorage.getItem('username')) {
               console.log(localStorage.getItem('username'));
               console.log(this.accounts[index]);
 

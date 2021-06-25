@@ -43,14 +43,14 @@ export class ShowaccountComponent implements OnInit {
         
         if (localStorage.getItem('username') == jsonData.userName) {
           hasMatch = true;
-          this.createdBy=jsonData.createdBy;
+          this.createdBy=jsonData.createdby;
           this.userName=jsonData.userName;
-          this.name=jsonData.name;
-          this.street = jsonData.street;
-          this.city = jsonData.city;
-          this.state = jsonData.state;
-          this.zip = jsonData.zip;
-          this.Bus_seg = jsonData.Bus_seg;
+          this.name=jsonData.insuredName;
+          this.street = jsonData.insuredStreet;
+          this.city = jsonData.insuredCity;
+          this.state = jsonData.insuredState;
+          this.zip = jsonData.insuredZip;
+          this.Bus_seg = jsonData.businessSegmentName;
           this.accountNumber = jsonData.accountNumber;
           this.id = jsonData.id;
           break;

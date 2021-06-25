@@ -49,16 +49,10 @@
       "id": 8
     },
     {
-      "userName": "gaurav",
-      "password": "gaurav123",
+      "userName": "test1",
+      "password": "test1",
       "roleCode": "1",
       "id": 9
-    },
-    {
-      "userName": "jay",
-      "password": "jay123",
-      "roleCode": "1",
-      "id": 10
     }
   ],
   "accounts": [
@@ -112,27 +106,15 @@
     },
     {
       "createdBy": "admin",
-      "userName": "jay",
-      "name": "Jay",
-      "street": "Phule Colony",
-      "city": "Dhule",
-      "state": "Maharashtra",
-      "zip": 424001,
-      "Bus_seg": "Appartment",
-      "accountNumber": 9999900006,
-      "id": 5
-    },
-    {
-      "createdBy": "agent",
-      "userName": "jdddd",
+      "userName": "gaurav",
       "name": "Gaurav Adhav",
       "street": "Phule Colony Plot No 20",
       "city": "Dhule",
       "state": "Maharashtra",
       "zip": 424001,
       "Bus_seg": "Business Auto",
-      "accountNumber": 99999900055,
-      "id": 6
+      "accountNumber": 111111111,
+      "id": 5
     }
   ],
   "policy": [
@@ -216,15 +198,33 @@
       "option2": "less than 2000",
       "option3": "High Segment",
       "premiumAmount": 600,
-      "createdBy": "agent",
-      "accountNumber": "99999900055",
-      "userName": "jdddd",
+      "createdBy": "admin",
+      "accountNumber": "111111111",
+      "userName": "gaurav",
       "business_segment": "Business Auto",
       "street": "Phule Colony Plot No 20",
       "city": "Dhule",
       "state": "Maharashtra",
       "zip": "424001",
       "id": 5
+    },
+    {
+      "question1": "select vehicle type",
+      "question2": "Vehicle Model Year",
+      "question3": "Vehicle Model",
+      "option1": "Heavy",
+      "option2": "2001 to 2010",
+      "option3": "Mid Segment",
+      "premiumAmount": 1200,
+      "createdBy": "admin",
+      "accountNumber": "22222222222222",
+      "userName": "user",
+      "business_segment": "Business Auto",
+      "street": "Phule Colony Plot No 20",
+      "city": "Dhule",
+      "state": "Maharashtra",
+      "zip": "424001",
+      "id": 6
     }
   ]
 }

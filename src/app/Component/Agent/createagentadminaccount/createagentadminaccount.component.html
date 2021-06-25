@@ -22,10 +22,10 @@
                                             <input type="text" class="form-control" placeholder="User Name *" value="" id="userName"  formControlName="userName" required/>
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Street *" value="" id="street"  formControlName="street" required/>
+                                            <input type="text" class="form-control" placeholder="Street *" value="" id="insuredStreet"  formControlName="insuredStreet" required/>
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="State *" value="" id="state"  formControlName="state" required/>
+                                            <input type="text" class="form-control" placeholder="State *" value="" id="insuredState"  formControlName="insuredState" required/>
                                         </div>
                                         
                                         <div class="form-group">
@@ -35,20 +35,20 @@
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Your Name *" value="" id="name"  formControlName="name" required/>
+                                            <input type="text" class="form-control" placeholder="Your Name *" value="" id="insuredName"  formControlName="insuredName" required/>
                                         </div>
 
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Your City *" value="" id="city"   formControlName="city" required/>
+                                            <input type="text" class="form-control" placeholder="Your City *" value="" id="insuredCity"   formControlName="insuredCity" required/>
                                         </div>
                                        
                                         <div class="form-group">
                                         </div>
                                         <div class="form-group">
-                                            <input type="number" class="form-control"  placeholder="Your Zip *" value="" id="zip"  formControlName="zip" required/>
+                                            <input type="number" class="form-control"  placeholder="Your Zip *" value="" id="insuredZip"  formControlName="insuredZip" required/>
                                         </div>
                                         <div class="form-group">
-                                            <select class="form-control" id="Bus_seg" formControlName="Bus_seg" required>
+                                            <select class="form-control" id="businessSegmentName" formControlName="businessSegmentName" required>
                                                 <option class="hidden"  selected disabled>Please select your Business Type</option>
                                                 <option value="Business Auto">Business Auto</option>
                                                 <option value="Restaurant">Restaurant</option>
@@ -58,7 +58,7 @@
                                             
                                         </div>
                                         <div *ngIf="invalidUserName" class="error">
-                                            <div class="text-danger">User Account Already Exists</div>
+                                            <div class="text-danger">User Name Already Exists</div>
                                           </div>
                                         <input type="submit" class="btnRegister"  value="Register"/>
                                     </div>

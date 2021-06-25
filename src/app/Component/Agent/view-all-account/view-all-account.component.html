@@ -24,13 +24,13 @@
             <tr *ngFor="let account of sortedAccounts"  class="table-active" style="font-size: 16px;">
                 <!-- <td>{{account.id}}</td> -->
                 <td>{{account.userName }}</td>
-                <td>{{account.name }}</td>
+                <td>{{account.insuredName }}</td>
                 <td>{{account.accountNumber}}</td>
-                <td>{{account.Bus_seg | titlecase }}</td>
-                <td>{{account.street | titlecase }}</td>
-                <td>{{account.city| titlecase }}</td>
-                <td>{{account.state| titlecase }}</td>
-                <td>{{account.zip }}</td>
+                <td>{{account.businessSegmentName | titlecase }}</td>
+                <td>{{account.insuredStreet | titlecase }}</td>
+                <td>{{account.insuredCity| titlecase }}</td>
+                <td>{{account.insuredState| titlecase }}</td>
+                <td>{{account.insuredZip }}</td>
             </tr>
             <tr *ngIf="!sortedAccounts||sortedAccounts.length==0">
                 <th colspan="9">

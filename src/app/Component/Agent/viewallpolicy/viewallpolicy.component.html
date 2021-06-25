@@ -8,7 +8,7 @@
     <table class="table">
         <thead  class="bg-primary" style="color: white; font-size: 14px;">
             <tr >
-                <th>Id</th>
+                <th>Policy Number</th>
                 <th>User Name</th>
                 <th>Account Number</th>
                 
@@ -24,7 +24,7 @@
         </thead>
         <tbody>
             <tr *ngFor="let account of sortedAccounts" class="table-active" style="font-size: 16px;">
-                <td>{{account.id}}</td>
+                <td>{{account.policyNumber}}</td>
                 <td>{{account.userName }}</td>
                 <td>{{account.accountNumber }}</td>
                 <td>{{account.business_segment}}</td>

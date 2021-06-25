@@ -25,7 +25,8 @@ import { ErrorComponent } from './Component/error/error.component';
 import { ContactusComponent } from './Component/contactus/contactus.component';
 import { GenerateReportComponent } from './Component/Admin/generate-report/generate-report.component';
 @NgModule({
-  declarations: [  
+  declarations: [
+  
     AppComponent,
     LoginComponent,
     UserhomeComponent,

@@ -49,13 +49,13 @@ export class CreatepolicyComponent implements OnInit {
 
         if (this.createPolicy.controls.accountNumber.value == jsonData.accountNumber) {
           hasMatch = true;
-          this.Bus_seg = jsonData.Bus_seg;
+          this.Bus_seg = jsonData.businessSegmentName;
           console.log(this.Bus_seg+"");
           localStorage.setItem('policyUserName', jsonData.userName);
-          localStorage.setItem('street', jsonData.street);
-          localStorage.setItem('city', jsonData.city);
-          localStorage.setItem('state', jsonData.state);
-          localStorage.setItem('zip', jsonData.zip);
+          localStorage.setItem('street', jsonData.insuredStreet);
+          localStorage.setItem('city', jsonData.insuredCity);
+          localStorage.setItem('state', jsonData.insuredState);
+          localStorage.setItem('zip', jsonData.insuredZip);
           localStorage.setItem('business_segment', this.Bus_seg);
           localStorage.setItem('accountNumber',this.createPolicy.controls.accountNumber.value);
           this.router.navigate(['question'] );

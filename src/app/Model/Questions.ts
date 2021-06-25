@@ -1,6 +1,6 @@
 export class Questions{
     
-    id: number=0;
+    policyNumber: number=0;
     question1: string="";
     question2: string="";
     question3: string="";
